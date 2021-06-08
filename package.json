@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
-    "build": "webpack",
+    "build": "webpack --watch",
     "test": "jest --verbose"
   },
   "repository": {
@@ -33,7 +33,8 @@
     "react-dom": "^17.0.2",
     "sass-loader": "^12.0.0",
     "style-loader": "^2.0.0",
-    "webpack": "^5.38.1"
+    "webpack": "^5.38.1",
+    "webpack-dev-middleware": "^5.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",

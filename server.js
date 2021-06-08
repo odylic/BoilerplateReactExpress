@@ -7,6 +7,10 @@ const PORT = 3000;
 app.use(express.static(__dirname + '/public'));
 
 
+app.get('/ping', (req, res) => {
+  res.json({message: 'pong'});
+});
+
 app.get('/test', (req, res) => {
   res.json({message: 'Hello from test endpoint'});
 });

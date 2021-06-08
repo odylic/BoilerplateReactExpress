@@ -11,6 +11,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: BUILD_DIR,
+    publicPath: '/',
   },
   target: 'node',
   resolve: {
@@ -18,6 +19,7 @@ module.exports = {
       fs: false,
     },
   },
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
